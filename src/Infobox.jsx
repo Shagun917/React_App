@@ -20,7 +20,11 @@ export default function InfoBox({ info }) {
           {info.city}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        {info.temp}
+        <li>Temp: {info.temp}</li>
+        <li>Minimum: {info.tempMin}</li>
+        <li>Maximum: {info.tempMax}</li>
+        <li>Humidity: {info.humidity}</li>
+        <li>FeelsLike: {info.feelsLike}</li>
         </Typography>
       </CardContent>
     </Card>
